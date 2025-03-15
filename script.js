@@ -1,4 +1,7 @@
-//your JS code here. If required.
  document.getElementById("enterBtn").addEventListener("click", function() {
-            document.getElementById("status").outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
+            const statusElement = document.getElementById("status");
+            const newElement = document.createElement("h1");
+            newElement.id = "status";
+            newElement.textContent = "Entered Metaverse";
+            statusElement.replaceWith(newElement);
         });
